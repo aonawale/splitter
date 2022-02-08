@@ -1,4 +1,3 @@
 module.exports = {
-  ...require("prettier/config"),
-  jsxBracketSameLine: true,
+  ...require("config/prettier-preset"),
 };

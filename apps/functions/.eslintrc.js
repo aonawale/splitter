@@ -1,7 +1,15 @@
 module.exports = {
-  extends: ['config/eslint-preset'],
+  root: true,
+  extends: ['.eslintrc.preset'],
   env: {
     es6: true,
     node: true,
+  },
+  ignorePatterns: [
+    '/bin',
+    '/lib'
+  ],
+  parserOptions: {
+    sourceType: 'module'
   }
 };

@@ -1,6 +1,6 @@
 module.exports = {
   root: true,
-  extends: ['config/eslint-preset', '@react-native-community'],
+  extends: ['.eslintrc.preset', '@react-native-community'],
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
@@ -11,4 +11,4 @@ module.exports = {
       },
     },
   ],
-};
+}
