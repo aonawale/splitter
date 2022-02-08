@@ -1,0 +1,35 @@
+{
+  "functions": {
+    "predeploy": [
+      "yarn --cwd \"$RESOURCE_DIR\" run lint",
+      "yarn --cwd \"$RESOURCE_DIR\" run build"
+    ],
+    "source": "."
+  },
+  "firestore": {
+    "rules": "firestore.rules",
+    "indexes": "firestore.indexes.json"
+  },
+  "storage": {
+    "rules": "storage.rules"
+  },
+  "emulators": {
+    "functions": {
+      "port": 5001,
+      "host": "192.168.0.118"
+    },
+    "auth": {
+      "port": 9090
+    },
+    "firestore": {
+      "port": 9091
+    },
+    "pubsub": {
+      "port": 9092
+    },
+    "ui": {
+      "port": 9093,
+      "enabled": true
+    }
+  }
+}

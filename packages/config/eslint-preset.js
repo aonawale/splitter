@@ -3,5 +3,8 @@ module.exports = {
   plugins: ['@typescript-eslint'],
   extends: ['prettier', 'plugin:import/recommended'],
   settings: {},
-  rules: {},
+  rules: {
+    quotes: ['error', 'single'],
+    semi: ['error', 'always'],
+  },
 };

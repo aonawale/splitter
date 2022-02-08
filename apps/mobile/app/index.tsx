@@ -8,7 +8,7 @@
  * @format
  */
 
-import React from 'react';
+import React from "react";
 import {
   SafeAreaView,
   ScrollView,
