@@ -1,0 +1,19 @@
+{
+  "name": "functions",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "config": "*",
+    "eslint": "7.32.0",
+    "tsconfig": "*",
+    "typescript": "^4.5.3"
+  }
+}
