@@ -3,13 +3,15 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "pod-install": "npx pod-install",
     "android": "react-native run-android",
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
     "dev": "yarn start | yarn ios",
     "lint": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "prepare": "yarn pod-install"
   },
   "dependencies": {
     "react": "17.0.2",

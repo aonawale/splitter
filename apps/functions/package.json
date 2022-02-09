@@ -5,6 +5,7 @@
   "prettier": "config/prettier-preset",
   "scripts": {
     "build": "tsc",
+    "build:watch": "tsc --watch --preserveWatchOutput",
     "shell": "yarn build && firebase functions:shell",
     "serve": "yarn build:watch | firebase emulators:start --only functions",
     "dev": "yarn serve",
