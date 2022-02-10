@@ -6,7 +6,8 @@
     "module": "commonjs",
     "lib": ["es2017"],
     "jsx": "react-native",
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "noEmit": true
   },
   "exclude": [
     "node_modules", "babel.config.js", "metro.config.js", "jest.config.js"
