@@ -5,11 +5,9 @@ module.exports = {
     es6: true,
     node: true,
   },
-  ignorePatterns: [
-    '/bin',
-    '/lib'
-  ],
+  ignorePatterns: ['/bin', '/lib/**/*'],
   parserOptions: {
-    sourceType: 'module'
-  }
-};
+    sourceType: 'module',
+    tsconfigRootDir: __dirname,
+  },
+}
