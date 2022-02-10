@@ -4,11 +4,10 @@
   "private": true,
   "scripts": {
     "pod-install": "npx pod-install",
+    "dev": "react-native start",
     "android": "react-native run-android",
-    "ios": "react-native run-ios",
-    "start": "react-native start",
+    "ios": "react-native run-ios --simulator='iPhone 13 Pro'",
     "test": "jest",
-    "dev": "yarn start | yarn ios",
     "lint": "eslint . --fix --ext .js,.jsx,.ts,.tsx",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
     "prepare": "yarn pod-install"
