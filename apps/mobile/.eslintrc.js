@@ -3,6 +3,8 @@ module.exports = {
   extends: ['@react-native-community', '.eslintrc.preset'],
   parserOptions: {
     project: './tsconfig.json',
+    sourceType: 'module',
+    tsconfigRootDir: __dirname,
   },
   overrides: [
     {

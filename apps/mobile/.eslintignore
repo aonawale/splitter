@@ -2,3 +2,5 @@ node_modules
 ios
 android
 package.json
+.eslintrc.js
+.eslintrc.preset.js
