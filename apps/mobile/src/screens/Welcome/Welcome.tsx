@@ -1,15 +1,17 @@
-import {TextStyle, StyleSheet} from 'react-native'
-import {Screen, Layout, Icon, Button, Typography, theme} from 'ui'
+import {Screen, Layout, Icon, Button, Typography} from 'ui'
+import {useAuthNavigator} from '../../hooks/navigator'
 
-export default () => {
+const Welcome = () => {
+  const navigator = useAuthNavigator()
+
   return (
-    <Screen backgroundColor={theme.color.primary} statusBar="light-content">
+    <Screen>
       <Layout
         padding={{vertical: 'default', horizontal: 'extraLarge'}}
         flex={1}
       >
         <Layout flex={1} justifyContent="center">
-          <Typography style={[styles.text, styles.ajoText]}>Ajo</Typography>
+          <Typography>Welcome</Typography>
           <Layout
             alignContent="center"
             justifyContent="center"
@@ -18,33 +20,14 @@ export default () => {
           >
             <Icon size="4x" name="pencil" />
           </Layout>
-          <Typography style={[styles.text, styles.getMoneyText]}>
-            Get your money under control
-          </Typography>
+          <Typography>Foo</Typography>
         </Layout>
-        <Button onPress={() => {}}>Get started</Button>
+        <Button onPress={() => navigator.push('SocialSignIn')}>
+          Get started
+        </Button>
       </Layout>
     </Screen>
   )
 }
 
-const styles = StyleSheet.create<{
-  ajoText: TextStyle
-  getMoneyText: TextStyle
-  text: TextStyle
-}>({
-  ajoText: {
-    fontSize: 56,
-    lineHeight: 56,
-  },
-
-  getMoneyText: {
-    fontSize: 32,
-  },
-  text: {
-    color: theme.color.white,
-    fontWeight: '600',
-    lineHeight: 40,
-    textAlign: 'center',
-  },
-})
+export default Welcome

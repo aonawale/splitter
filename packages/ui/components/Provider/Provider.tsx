@@ -1,32 +1,14 @@
 import {ReactNode} from 'react'
 import {Provider, DefaultTheme as PaperDefaultTheme} from 'react-native-paper'
-import {theme} from '../../helpers/theme'
-
-const {color, palette} = theme
-
-const defaultTheme = {
-  ...PaperDefaultTheme,
-  colors: {
-    ...PaperDefaultTheme.colors,
-    primary: color.primary,
-    accent: color.secondary,
-    background: color.background,
-    card: color.white,
-    surface: color.white,
-    error: color.error,
-    text: palette.primaryText,
-    border: color.line,
-  },
-  roundness: 4,
-}
+import {appTheme} from '../../helpers/theme'
 
 type Theme = typeof PaperDefaultTheme
 
 const buildTheme = (theme?: Theme) => ({
-  ...defaultTheme,
+  ...appTheme,
   ...theme,
   color: {
-    ...defaultTheme.colors,
+    ...appTheme.colors,
     ...theme?.colors,
   },
 })

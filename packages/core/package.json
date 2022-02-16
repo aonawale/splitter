@@ -1,0 +1,14 @@
+{
+  "name": "core",
+  "version": "0.0.0",
+  "main": "./index.tsx",
+  "types": "./index.tsx",
+  "license": "MIT",
+  "prettier": "config/prettier-preset",
+  "devDependencies": {
+    "config": "*",
+    "prettier": "^2.5.1",
+    "tsconfig": "*",
+    "typescript": "^4.5.3"
+  }
+}
